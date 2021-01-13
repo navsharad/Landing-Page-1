@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generic Motors</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="media/logo3.png" alt=""></div>
+        <div class="links">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn"><img src="media/menu.png" alt=""></div>
+        <div class="close-btn hidden"><img src="media/close.png" alt=""></div>
+    </nav>
+
+    <!-- video background -->
+    <video src="media/video.mp4" muted loop autoplay></video>
+
+    <!-- Text Content -->
+    <section>
+        <div class="text">
+            <h1>Quality Cars</h1>
+            <h3>At an affordable price</h3>
+            <p>Here at Generic Motors we do things the old fashioned way, our vehicles are produced custom to order. Every single installation is done by hand by our team of world-class technicians. This ensures every vehicle is fine-tuned leading to a luxurious final product made just for you. </p>
+        </div>
+    </section>
+
+    <!-- social media links -->
+    <div class="social-links">
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="media/facebook.png" alt=""></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="media/twitter.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><img src="media/linkedin.png" alt=""></a></li>
+        </ul>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.menu-btn');
+        const closeButton = document.querySelector('.close-btn');
+        const links = document.querySelector('.links');
+
+        menuButton.addEventListener('click', () => {
+            links.classList.add('mobile');
+            menuButton.classList.add('hidden');
+            closeButton.classList.remove('hidden');
+        })
+
+        closeButton.addEventListener('click', () => {
+            links.classList.remove('mobile');
+            menuButton.classList.remove('hidden');
+            closeButton.classList.add('hidden');
+        })
+
+
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel With Us</title>
+</head>
+<body>
+    <div class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle "></div>
+        </header>
+
+        <video src="media/video.mp4" muted loop autoplay></video>
+
+        <div class="text">
+            <h2>Details Matter</h2>
+            <h3>Every Car Is Hand Crafted</h3>
+            <p>Here at Generic Motors, every detail matters. That's why our cars are created the old fashioned way, by hand.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a><img src="media/facebook.png" alt=""></a></li>
+            <li><a><img src="media/twitter.png" alt=""></a></li>
+            <li><a><img src="media/facebook.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a class="social-icon" href="#">Home</a></li>
+            <li><a class="social-icon" href="#">News</a></li>
+            <li><a class="social-icon" href="#">Destinations</a></li>
+            <li><a class="social-icon" href="#">Blog</a></li>
+            <li><a class="social-icon" href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html> -->
